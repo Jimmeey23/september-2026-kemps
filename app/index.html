@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111923" />
+  <title>Kwality House · Studio Intelligence</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.8"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 19.5h16"/><path d="M6.5 16V10m5.5 6V5m5.5 11v-8"/><circle cx="6.5" cy="8" r="1"/><circle cx="12" cy="3.7" r="1"/><circle cx="17.5" cy="6" r="1"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 20v-1.4a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4V20"/><circle cx="9.5" cy="7" r="3.5"/><path d="M17 11a3.4 3.4 0 1 0-1.1-6.6M21 20v-1.4a4 4 0 0 0-3-3.9"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="15" rx="2"/><path d="M7.5 3.5v4m9-4v4M3.5 10h17"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16M8 7h8m-8 4h8"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-note" viewBox="0 0 24 24"><path d="M6 3.5h12a2 2 0 0 1 2 2v13l-4 2h-10a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2z"/><path d="M8 8h8m-8 4h8m-8 4h4"/></symbol>
+    <symbol id="i-sticky" viewBox="0 0 24 24"><path d="M5 3.5h14a1.5 1.5 0 0 1 1.5 1.5v10L14 21H5a1.5 1.5 0 0 1-1.5-1.5V5A1.5 1.5 0 0 1 5 3.5z"/><path d="M14.5 21v-5.5H20M7.5 8h9m-9 4h6"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7L12 3Z"/><path d="m19 16 .8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16Z"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3m-4 0h8"/></symbol>
+    <symbol id="i-presentation" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v5m-4 0h8m-7-9 2-2 2 1 3-3"/></symbol>
+    <symbol id="i-headphones" viewBox="0 0 24 24"><path d="M4 13v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="12" width="4" height="7" rx="2"/><rect x="17" y="12" width="4" height="7" rx="2"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 10v4h4l5 4V6l-5 4H4z"/><path d="M17 9a5 5 0 0 1 0 6m2.5-9a9 9 0 0 1 0 12"/></symbol>
+    <symbol id="i-volume-off" viewBox="0 0 24 24"><path d="M4 10v4h4l5 4V6l-5 4H4zM17 9l5 6m0-6-5 6"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 4.5A1.5 1.5 0 0 1 7.5 3h9A1.5 1.5 0 0 1 18 4.5V21l-6-4-6 4z"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14m-7-7h14"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-maximize" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m13-5h3a2 2 0 0 1 2 2v3M3 16v3a2 2 0 0 0 2 2h3m13-5v3a2 2 0 0 1-2 2h-3"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.6-4.6m-7.6 7 7.6 4.6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 19v2h16v-2"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M19.5 15.2A8 8 0 0 1 8.8 4.5 8.5 8.5 0 1 0 19.5 15.2Z"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1a1.7 1.7 0 1 1-2.4 2.4l-.1-.1a1.7 1.7 0 0 0-2.9 1.2v.2a1.7 1.7 0 1 1-3.4 0v-.2a1.7 1.7 0 0 0-2.9-1.2l-.1.1a1.7 1.7 0 1 1-2.4-2.4l.1-.1A1.7 1.7 0 0 0 4.2 12H4a1.7 1.7 0 1 1 0-3.4h.2a1.7 1.7 0 0 0 1.2-2.9l-.1-.1a1.7 1.7 0 1 1 2.4-2.4l.1.1a1.7 1.7 0 0 0 2.9-1.2v-.2a1.7 1.7 0 1 1 3.4 0v.2a1.7 1.7 0 0 0 2.9 1.2l.1-.1a1.7 1.7 0 1 1 2.4 2.4l-.1.1a1.7 1.7 0 0 0 1.2 2.9h.2a1.7 1.7 0 1 1 0 3.4h-.2a1.7 1.7 0 0 0-1.2 2.9Z"/></symbol>
+    <symbol id="i-skip" viewBox="0 0 24 24"><path d="m5 5 10 7-10 7V5Zm10 0v14m4-14v14"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m7 4 13 8-13 8V4Z"/></symbol>
+    <symbol id="i-wand" viewBox="0 0 24 24"><path d="m15 4 5 5L8 21l-5-5L15 4Z"/><path d="m13 6 5 5M4 4v4m-2-2h4m13 10v4m-2-2h4"/></symbol>
+  </svg>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-lockup">
+        <div class="brand-mark"><span>K</span><i></i></div>
+        <div class="brand-copy"><strong>KWALITY HOUSE</strong><span>STUDIO INTELLIGENCE</span></div>
+        <button class="icon-btn mobile-close" id="closeSidebar" aria-label="Close menu"><svg><use href="#i-close"/></svg></button>
+      </div>
+
+      <button class="studio-selector" type="button" aria-label="Selected studio">
+        <span class="studio-avatar">KH</span><span class="studio-name"><b>Kwality House</b><small>Kemps Corner · Mumbai</small></span><span class="live-pip"></span>
+      </button>
+
+      <div class="sidebar-section-label"><span>SEPTEMBER 2026 SNAPSHOT</span><button class="quiet-icon" id="snapshotToggle" aria-label="Toggle snapshot"><svg><use href="#i-down"/></svg></button></div>
+      <div class="snapshot-grid" id="snapshotGrid">
+        <div class="snapshot-cell"><strong>2,090</strong><span>check-ins</span></div>
+        <div class="snapshot-cell"><strong>45.4<span>%</span></strong><span>utilisation</span></div>
+        <div class="snapshot-cell"><strong>₹3.21<span>m</span></strong><span>cash collected</span></div>
+        <div class="snapshot-cell"><strong>474</strong><span>unique clients</span></div>
+      </div>
+
+      <div class="nav-search" id="sidebarSearch"><svg><use href="#i-search"/></svg><span>Search reports</span><kbd>⌘ K</kbd></div>
+      <nav class="report-nav" id="reportNav" aria-label="Reports">
+        <div class="nav-group-label">THE BRIEFING</div>
+        <button class="nav-item" data-report="09" data-short="Complete studio overview"><span class="nav-icon"><svg><use href="#i-grid"/></svg></span><span class="nav-title">Studio overview</span><span class="nav-index">09</span></button>
+        <button class="nav-item" data-report="10" data-short="Consolidated action plan"><span class="nav-icon"><svg><use href="#i-target"/></svg></span><span class="nav-title">Action plan</span><span class="nav-index">10</span></button>
+        <div class="nav-group-label reports-label">PERFORMANCE REPORTS <span>07</span></div>
+        <button class="nav-item" data-report="01" data-short="Sales and revenue performance"><span class="nav-icon"><svg><use href="#i-chart"/></svg></span><span class="nav-title">Sales &amp; revenue</span><span class="nav-index">01</span></button>
+        <button class="nav-item" data-report="02" data-short="Class performance and schedule"><span class="nav-icon"><svg><use href="#i-calendar"/></svg></span><span class="nav-title">Class performance</span><span class="nav-index">02</span></button>
+        <button class="nav-item" data-report="03" data-short="Recurring class analysis"><span class="nav-icon"><svg><use href="#i-calendar"/></svg></span><span class="nav-title">Recurring classes</span><span class="nav-index">03</span></button>
+        <button class="nav-item" data-report="04" data-short="Roster impact and instructor changes"><span class="nav-icon"><svg><use href="#i-users"/></svg></span><span class="nav-title">Roster impact</span><span class="nav-index">04</span></button>
+        <button class="nav-item" data-report="06" data-short="Instructor performance"><span class="nav-icon"><svg><use href="#i-users"/></svg></span><span class="nav-title">Instructor performance</span><span class="nav-index">06</span></button>
+        <button class="nav-item" data-report="07" data-short="Membership renewal and churn"><span class="nav-icon"><svg><use href="#i-users"/></svg></span><span class="nav-title">Renewal &amp; churn</span><span class="nav-index">07</span></button>
+        <button class="nav-item" data-report="08" data-short="Late cancellations and booking behaviour"><span class="nav-icon"><svg><use href="#i-clock"/></svg></span><span class="nav-title">Booking behaviour</span><span class="nav-index">08</span></button>
+      </nav>
+
+      <div class="sidebar-tools">
+        <div class="nav-group-label">PRESENTER TOOLS</div>
+        <button class="tool-nav" data-panel="assistant"><span class="tool-glyph agent-glyph"><svg><use href="#i-spark"/></svg></span><span>Insight agent</span><span class="tool-new">LIVE</span></button>
+        <button class="tool-nav" data-panel="toolkit"><span class="tool-glyph"><svg><use href="#i-mic"/></svg></span><span>Speaker toolkit</span></button>
+        <button class="tool-nav" data-panel="annotations"><span class="tool-glyph"><svg><use href="#i-note"/></svg></span><span>Annotations</span><span class="tool-count" id="annotationCount">0</span></button>
+        <button class="tool-nav" data-panel="sticky"><span class="tool-glyph"><svg><use href="#i-sticky"/></svg></span><span>Sticky notes</span><span class="tool-count" id="stickyCount">0</span></button>
+        <button class="tool-nav" data-panel="soundboard"><span class="tool-glyph"><svg><use href="#i-volume"/></svg></span><span>Soundboard</span></button>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="source-status"><span class="source-pip"></span><span>9 reports loaded</span><span class="source-month">SEP ’26</span></div>
+        <button class="sidebar-help" id="openShortcuts"><span class="help-circle">?</span><span>Keyboard shortcuts</span><kbd>⌘ /</kbd></button>
+      </div>
+    </aside>
+
+    <main class="main-area" id="mainArea">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open navigation"><svg><use href="#i-menu"/></svg></button>
+          <div class="breadcrumbs"><span>Studio intelligence</span><svg><use href="#i-chevron"/></svg><strong id="breadcrumbTitle">Studio overview</strong></div>
+        </div>
+        <div class="topbar-actions">
+          <button class="top-action search-action" id="globalSearchBtn"><svg><use href="#i-search"/></svg><span>Find anything</span><kbd>⌘ K</kbd></button>
+          <button class="icon-btn top-icon" id="outlineBtn" title="Report outline" aria-label="Report outline"><svg><use href="#i-book"/></svg></button>
+          <button class="icon-btn top-icon" id="notesBtn" title="Speaker notes" aria-label="Speaker notes"><svg><use href="#i-note"/></svg></button>
+          <button class="icon-btn top-icon" id="assistantBtn" title="Insight agent" aria-label="Insight agent"><svg><use href="#i-spark"/></svg></button>
+          <span class="top-divider"></span>
+          <button class="present-button" id="presentBtn"><svg><use href="#i-presentation"/></svg><span>Present</span><span class="present-caret">↗</span></button>
+          <button class="avatar-chip" id="userMenu" title="Kwality House briefing"><span>KH</span></button>
+        </div>
+      </header>
+
+      <section class="report-bar" aria-label="Current report">
+        <div class="report-ident">
+          <div class="report-kicker"><span class="kicker-dot"></span><span id="reportType">EXECUTIVE BRIEFING</span><span class="kicker-sep">/</span><span>SEPTEMBER 2026</span></div>
+          <h1 id="reportTitle">Complete Studio Overview</h1>
+          <p id="reportSub">One studio. Nine lenses. A clear view of what to do next.</p>
+        </div>
+        <div class="report-actions">
+          <button class="plain-action" id="bookmarkBtn" title="Bookmark this report"><svg><use href="#i-bookmark"/></svg><span>Save</span></button>
+          <div class="export-control"><button class="export-action" id="reportExportBtn" aria-expanded="false" aria-label="Export entire report"><svg><use href="#i-download"/></svg><span>Export</span><svg class="export-caret"><use href="#i-down"/></svg></button><div class="export-menu" id="reportExportMenu" aria-hidden="true"><div class="export-menu-head"><span>EXPORT REPORT</span><small>Entire report · September 2026</small></div><button data-report-export="pdf"><span class="export-option-icon">▤</span><span><b>PDF / Print</b><small>Print-ready · Save as PDF</small></span><svg><use href="#i-arrow-up-right"/></svg></button><button data-report-export="html"><span class="export-option-icon">&lt;/&gt;</span><span><b>Standalone HTML</b><small>Full layout, charts &amp; tables</small></span><svg><use href="#i-download"/></svg></button><button data-report-export="markdown"><span class="export-option-icon">M↓</span><span><b>Markdown</b><small>Structured headings &amp; tables</small></span><svg><use href="#i-download"/></svg></button><button data-report-export="text"><span class="export-option-icon">TXT</span><span><b>Plain text</b><small>Complete readable transcript</small></span><svg><use href="#i-download"/></svg></button><button data-report-export="json"><span class="export-option-icon">{ }</span><span><b>Structured JSON</b><small>Sections, tables &amp; chart labels</small></span><svg><use href="#i-download"/></svg></button></div></div>
+          <span class="action-divider"></span>
+          <button class="reader-size" id="fontDown" title="Decrease report text size">A−</button><span class="reader-size-label" id="fontLabel">100%</span><button class="reader-size" id="fontUp" title="Increase report text size">A+</button>
+          <span class="action-divider"></span>
+          <button class="icon-btn subtle-icon" id="focusBtn" title="Focus / fullscreen mode" aria-label="Focus mode"><svg><use href="#i-maximize"/></svg></button>
+        </div>
+      </section>
+
+      <div class="reading-progress-wrap">
+        <div class="reading-meta"><span class="reading-current"><span class="reading-live"></span><span id="activeSection">Opening report</span></span><span class="reading-percent" id="readingPercent">0% read</span></div>
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      </div>
+
+      <section class="reader-zone" id="readerZone">
+        <div class="reader-toolbar">
+          <div class="reader-state"><span class="state-icon"><svg><use href="#i-book"/></svg></span><span><b>Report viewport</b><small id="readerMeta">Reading view · 09</small></span></div>
+          <div class="reader-toolbar-right">
+            <button class="reader-tool-btn" id="followBtn" title="Follow the presenter"><span class="follow-dot"></span><span>Follow presenter</span></button>
+            <button class="reader-tool-btn" id="teleprompterBtn"><svg><use href="#i-mic"/></svg><span>Teleprompter</span></button>
+            <button class="reader-tool-btn" id="stickyQuickBtn"><svg><use href="#i-sticky"/></svg><span>Sticky note</span></button>
+            <span class="reader-tool-divider"></span>
+            <button class="reader-tool-icon" id="soundQuickBtn" title="Soundboard"><svg><use href="#i-volume"/></svg></button>
+          </div>
+        </div>
+        <div class="viewer-wrap" id="viewerWrap">
+          <div class="viewer-frame-shell">
+            <div class="frame-loading" id="frameLoading"><span class="loading-orbit"></span><span>Preparing your briefing…</span></div>
+            <iframe id="reportFrame" title="Kwality House report" src="about:blank"></iframe>
+            <div class="frame-skeleton" id="frameSkeleton"><div class="skeleton-cover"></div><div class="skeleton-line long"></div><div class="skeleton-line med"></div></div>
+          </div>
+        </div>
+        <div class="reader-footer">
+          <div class="footer-left"><span class="green-dot"></span><span>Source report <b id="footerReportNumber">09</b> · September 2026</span><span class="footer-sep">•</span><span id="readTime">~8 min</span></div>
+          <div class="footer-right"><button id="exportBtn"><svg><use href="#i-download"/></svg>Export notes</button><span class="footer-vline"></span><span>Press <kbd>F</kbd> to focus</span></div>
+        </div>
+      </section>
+
+      <div class="teleprompter-overlay" id="teleprompterOverlay" aria-hidden="true">
+        <div class="tp-topline"><div><span class="tp-live"></span><b>TELEPROMPTER</b><span class="tp-label">SPEAKER VIEW</span></div><div class="tp-actions"><button id="tpPause" class="tp-control"><svg><use href="#i-pause"/></svg><span>Pause</span></button><button id="tpClose" class="tp-close" aria-label="Close teleprompter"><svg><use href="#i-close"/></svg></button></div></div>
+        <div class="tp-window" id="tpWindow"><div class="tp-content" id="tpContent">Your speaking script will appear here. Open Speaker toolkit to add a teleprompter script.</div></div>
+        <div class="tp-bottom"><span>Speed</span><input id="tpSpeed" type="range" min="1" max="8" value="3"/><span id="tpSpeedLabel">3×</span><span class="tp-tip">Esc to dismiss</span></div>
+      </div>
+    </main>
+  </div>
+
+  <div class="sidebar-scrim" id="sidebarScrim"></div>
+  <div class="drawer-scrim" id="drawerScrim"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head"><div><span class="drawer-eyebrow" id="drawerEyebrow">TOOLS</span><h2 id="drawerTitle">Report outline</h2></div><button class="icon-btn drawer-close" id="drawerClose" aria-label="Close panel"><svg><use href="#i-close"/></svg></button></div>
+    <div class="drawer-body" id="drawerBody"></div>
+  </aside>
+
+  <div class="modal-scrim" id="modalScrim"></div>
+  <section class="modal search-modal" id="searchModal" aria-hidden="true" role="dialog" aria-label="Search reports">
+    <div class="search-modal-top"><svg><use href="#i-search"/></svg><input id="searchInput" autocomplete="off" placeholder="Search reports, sections, or a topic…"/><kbd>ESC</kbd></div>
+    <div class="search-filters"><span>SEARCH ALL 9 REPORTS</span><span class="index-status" id="indexStatus"><i></i>Indexing report library…</span></div>
+    <div class="search-results" id="searchResults"><div class="search-empty"><span class="search-empty-mark"><svg><use href="#i-spark"/></svg></span><b>Explore the briefing library</b><p>Search any phrase, metric, class, or recommendation.</p><div class="search-suggestions"><button data-query="revenue attendance">revenue vs attendance</button><button data-query="Strength Lab capacity">Strength Lab capacity</button><button data-query="renewal churn">renewals &amp; churn</button></div></div></div>
+    <div class="search-modal-foot"><span><kbd>↑</kbd><kbd>↓</kbd> to navigate</span><span><kbd>↵</kbd> to open</span><span><kbd>ESC</kbd> to close</span></div>
+  </section>
+
+  <div class="modal annotation-modal" id="annotationModal" aria-hidden="true" role="dialog" aria-label="Create an annotation">
+    <div class="modal-title-row"><div><span class="drawer-eyebrow">ANNOTATION</span><h2>Capture this insight</h2></div><button class="icon-btn" id="annotationClose" aria-label="Close"><svg><use href="#i-close"/></svg></button></div>
+    <blockquote id="annotationQuote"></blockquote>
+    <label class="field-label">Add a note <span>OPTIONAL</span></label>
+    <textarea id="annotationNote" rows="3" placeholder="Why is this important? Add a thought for later…"></textarea>
+    <div class="annotation-extra-fields"><label class="field-label" for="annotationCategory">Type</label><select id="annotationCategory"><option value="insight">Insight</option><option value="action">Action</option><option value="question">Question</option><option value="risk">Risk</option></select><label class="field-label" for="annotationPriority">Priority</label><select id="annotationPriority"><option value="normal">Normal</option><option value="high">High priority</option><option value="low">Low priority</option></select><label class="field-label" for="annotationTags">Tags <span>OPTIONAL</span></label><input id="annotationTags" placeholder="e.g. October, retention, follow-up" /></div>
+    <div class="color-picker"><span>Highlight colour</span><button data-color="gold" class="color-dot selected gold" aria-label="Gold highlight"></button><button data-color="mint" class="color-dot mint" aria-label="Mint highlight"></button><button data-color="rose" class="color-dot rose" aria-label="Rose highlight"></button></div>
+    <div class="modal-actions"><button class="text-button" id="annotationCancel">Cancel</button><button class="primary-button" id="saveAnnotation"><svg><use href="#i-check"/></svg>Save annotation</button></div>
+  </div>
+
+  <div class="modal sticky-modal" id="stickyModal" aria-hidden="true" role="dialog" aria-label="Create sticky note">
+    <div class="modal-title-row"><div><span class="drawer-eyebrow">PERSISTENT STICKY NOTE</span><h2>Leave yourself a thought</h2></div><button class="icon-btn" id="stickyClose" aria-label="Close"><svg><use href="#i-close"/></svg></button></div>
+    <div class="sticky-paper"><span class="sticky-pin"></span><textarea id="stickyInput" rows="5" placeholder="A question, an action, a detail to revisit…"></textarea></div>
+    <div class="sticky-modal-meta"><span id="stickyContext">Attached to the current report</span><span>Autosaved in this browser</span></div>
+    <div class="modal-actions"><button class="text-button" id="stickyCancel">Cancel</button><button class="primary-button" id="saveSticky"><svg><use href="#i-plus"/></svg>Add sticky note</button></div>
+  </div>
+
+  <div class="modal shortcuts-modal" id="shortcutsModal" aria-hidden="true" role="dialog" aria-label="Keyboard shortcuts">
+    <div class="modal-title-row"><div><span class="drawer-eyebrow">QUICK CONTROLS</span><h2>Keyboard shortcuts</h2></div><button class="icon-btn" id="shortcutsClose" aria-label="Close"><svg><use href="#i-close"/></svg></button></div>
+    <div class="shortcut-list"><div><span>Search all reports</span><kbd>⌘ K</kbd></div><div><span>Focus / full screen</span><kbd>F</kbd></div><div><span>Open speaker notes</span><kbd>N</kbd></div><div><span>Present in a new window</span><kbd>P</kbd></div><div><span>Teleprompter</span><kbd>T</kbd></div><div><span>Next / previous report</span><kbd>⌥ → / ←</kbd></div><div><span>Dismiss panels</span><kbd>ESC</kbd></div></div>
+  </div>
+
+  <div class="selection-toolbar" id="selectionToolbar" aria-hidden="true"><span class="selection-indicator">SELECTED</span><button data-action="highlight"><span class="mini-highlight"></span>Highlight</button><button data-action="annotate"><svg><use href="#i-note"/></svg>Comment</button><button data-action="cite"><svg><use href="#i-book"/></svg>Cite</button><button data-action="copy" title="Copy selected text"><svg><use href="#i-share"/></svg></button></div>
+  <div class="sound-fab-wrap" id="soundFabWrap"><button class="sound-fab" id="soundFab" aria-label="Open sound cue options" aria-expanded="false" title="Sound cues"><svg><use href="#i-volume"/></svg><span class="sound-fab-pulse"></span></button><div class="sound-fab-popover" id="soundFabPopover" aria-hidden="true"><div class="sound-popover-head"><span class="sound-popover-mark"><svg><use href="#i-volume"/></svg></span><span><b>Sound cues</b><small>Optional · plays on this device</small></span><button id="soundFabClose" aria-label="Close sound options"><svg><use href="#i-close"/></svg></button></div><div class="sound-popover-options"><button data-floating-sfx="chime"><span class="floating-sfx-symbol">♬</span><span><b>Opening chime</b><small>Set the tone</small></span><span class="floating-play">PLAY</span></button><button data-floating-sfx="transition"><span class="floating-sfx-symbol">↗</span><span><b>Section shift</b><small>Gentle transition</small></span><span class="floating-play">PLAY</span></button><button data-floating-sfx="applause"><span class="floating-sfx-symbol">✳</span><span><b>Applause</b><small>Celebrate a close</small></span><span class="floating-play">PLAY</span></button><button data-floating-sfx="focus"><span class="floating-sfx-symbol">◎</span><span><b>Focus bell</b><small>Quiet attention cue</small></span><span class="floating-play">PLAY</span></button></div><div class="sound-popover-foot"><label><span>VOLUME</span><input id="floatingSoundVolume" type="range" min="0" max="100" value="55"><b id="floatingVolumeLabel">55%</b></label><button id="openFullSoundboard">Soundboard settings <svg><use href="#i-arrow-right"/></svg></button></div></div></div>
+  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

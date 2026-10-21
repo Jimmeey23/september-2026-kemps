@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111923" />
+  <title>Presenter View · Kwality House</title>
+  <link rel="stylesheet" href="presenter.css" />
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m7 4 13 8-13 8V4Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-maximize" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m13-5h3a2 2 0 0 1 2 2v3M3 16v3a2 2 0 0 0 2 2h3m13-5v3a2 2 0 0 1-2 2h-3"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3m-4 0h8"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7L12 3Z"/><path d="m19 16 .8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16M8 7h8m-8 4h8"/></symbol>
+  </svg>
+  <main class="presenter-app">
+    <header class="presenter-topbar">
+      <a class="brand" href="index.html" aria-label="Return to report viewport"><span class="brand-mark">K</span><span class="brand-name"><b>KWALITY HOUSE</b><small>SPEAKER CONSOLE</small></span></a>
+      <div class="session-status"><i></i><span>LIVE PRESENTER VIEW</span><b>SEPTEMBER 2026</b></div>
+      <div class="top-right"><span class="connection"><i></i><span id="connectionText">SYNCING</span></span><button id="fullScreenBtn" class="outline-btn" title="Toggle fullscreen"><svg><use href="#i-maximize"/></svg><span>Fullscreen</span></button><a class="exit-btn" href="index.html" id="returnBtn"><svg><use href="#i-close"/></svg><span>Return to report</span></a></div>
+    </header>
+    <section class="presenter-layout">
+      <section class="stage-column">
+        <div class="stage-overline"><span>NOW PRESENTING</span><span class="stage-report" id="stageReport">REPORT 09 · OVERVIEW</span></div>
+        <div class="stage-card">
+          <div class="section-count"><span id="sectionCounter">01</span><i></i><span id="sectionTotal">12</span></div>
+          <div class="stage-label">CURRENT SECTION</div>
+          <h1 id="currentTitle">Preparing your briefing…</h1>
+          <p id="currentExcerpt" class="current-excerpt">The section preview will appear here as the report loads.</p>
+          <div class="stage-bottom"><span class="stage-progress-label" id="stageProgressLabel">01 OF 12</span><div class="stage-progress"><i id="stageProgress"></i></div><span class="section-time" id="clockTime">--:--</span></div>
+        </div>
+        <div class="stage-nav"><button id="prevSection" class="nav-button"><svg><use href="#i-arrow-left"/></svg><span>Previous section</span></button><div class="stage-nav-center"><span id="syncLabel">Changes follow this presenter window</span><span class="sync-dot"></span></div><button id="nextSection" class="nav-button primary"><span>Next section</span><svg><use href="#i-arrow-right"/></svg></button></div>
+        <div class="next-up-card"><div class="next-up-icon"><svg><use href="#i-book"/></svg></div><div><span>NEXT UP</span><b id="nextTitle">Loading section outline…</b></div><button id="nextUpBtn" aria-label="Go to next section"><svg><use href="#i-arrow-right"/></svg></button></div>
+        <div class="live-notice"><span class="live-wave"><i></i><i></i><i></i><i></i><i></i></span><span><b>Presenter follow is on</b><small>Audience viewport follows your report and section navigation.</small></span><button id="toggleFollow" class="follow-toggle">ON</button></div>
+      </section>
+
+      <aside class="speaker-column">
+        <div class="speaker-panel notes-panel">
+          <div class="panel-heading"><div><span class="panel-eyebrow">PRIVATE · ONLY YOU</span><h2>Speaker notes</h2></div><span class="private-lock">PRIVATE</span></div>
+          <textarea id="speakerNotes" placeholder="Opening thought, key evidence, transition, questions to ask…"></textarea>
+          <div class="panel-foot"><span id="notesSaveState"><i></i>Saved locally</span><span><kbd>⌘</kbd><kbd>S</kbd> autosaves</span></div>
+        </div>
+        <div class="speaker-panel timer-panel">
+          <div class="panel-heading"><div><span class="panel-eyebrow">SESSION CLOCK</span><h2>Presentation timer</h2></div><span class="clock-icon"><svg><use href="#i-mic"/></svg></span></div>
+          <div class="timer-line"><strong id="timerDisplay">00:00</strong><span>ELAPSED</span></div>
+          <div class="timer-actions"><button id="timerBtn" class="timer-primary"><svg><use href="#i-play"/></svg><span>Start timer</span></button><button id="timerReset" class="timer-reset">Reset</button></div>
+        </div>
+        <div class="speaker-panel prompter-panel">
+          <div class="panel-heading"><div><span class="panel-eyebrow">LIVE READING</span><h2>Teleprompter</h2></div><span class="prompter-status" id="prompterStatus"><i></i>OFF</span></div>
+          <textarea id="teleprompterScript" placeholder="Paste a delivery script. Your private notes and teleprompter script are separate."></textarea>
+          <div class="prompter-controls"><label>SCROLL SPEED<input id="prompterSpeed" type="range" min="1" max="8" value="3"/></label><span id="prompterSpeedLabel">3×</span><button id="prompterToggle" class="prompter-start"><svg><use href="#i-play"/></svg><span>Start</span></button></div>
+        </div>
+        <div class="speaker-bottom"><div class="speaker-tip"><span class="tip-star">✦</span><span><b>Presentation tip</b><small>Use ← / → to move between sections. Your notes stay private and are never broadcast.</small></span></div><button id="closePresenter" class="close-presenter">Close speaker view</button></div>
+      </aside>
+    </section>
+  </main>
+  <div class="prompter-stage" id="prompterStage" aria-hidden="true"><div class="prompter-stage-head"><span class="mini-live"></span><b>TELEPROMPTER</b><button id="prompterClose" aria-label="Close teleprompter"><svg><use href="#i-close"/></svg></button></div><div class="prompter-scroll" id="prompterScroll"><div id="prompterText"></div></div></div>
+  <div class="toast" id="presenterToast"></div>
+  <script src="presenter.js"></script>
+</body>
+</html>
